@@ -50,22 +50,24 @@ def loja_tintas(area_pintar):
     print(f'Você precisará de {latas_necessarias} latas e gastará um total de R${latas_necessarias*80},00') 
 
 loja_tintas(area_pintar)
-'''
 
+'''
 #5 
 
 '''
 inteiro = int(input("Digite um número inteiro: "))
+inteiro2 = int(input("Digite outro número inteiro: "))
 real = float(input("Digite um número real: "))
 
 def int_real(inteiro, real):
     #a) o produto do primeiro com a metade do segundo.
-    r1 = (inteiro*2) * (real/2)
-    #b) a soma do triplo com o terceiro
-    r2 = (inteiro*3) + r1
+    r1 = (inteiro*2) * (inteiro2/2)
+    #b) a soma do triplo do primeiro com o terceiro
+    r2 = (inteiro*3) + real
     #c) o terceiro elevado ao cubo
-    r3 = r2**3
+    r3 = real**3
     print(f'Resposta a):\n  {r1}\nResposta b):\n  {r2}\nResposta c):\n  {r3}')
 
 int_real(inteiro, real)
 '''
+
