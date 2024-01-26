@@ -117,13 +117,13 @@ else:
     result = (62.1 * h) - 44
     print(f'Seu peso ideal é: {result}')
 
-""" 
 
-""" 14. A nota final de um estudante é calculada a partir de três notas atribuídas entre o intervalo de 0 até 10, respectivamente, a um trabalho de laboratório, a uma avaliação semestral e a um exame final. A média das três notas mencionadas
+
+ 14. A nota final de um estudante é calculada a partir de três notas atribuídas entre o intervalo de 0 até 10, respectivamente, a um trabalho de laboratório, a uma avaliação semestral e a um exame final. A média das três notas mencionadas
 anteriormente obedece aos pesos: Trabalho de Laboratório: 2; Avaliação Semestral: 3; Exame Final: 5. De acordo com o resultado, mostre na tela se o aluno está reprovado (média entre 0 e 2,9), de recuperação (entre 3 e 4,9) ou se
-foi aprovado. Faça todas as verificações necessárias.  """
+foi aprovado. Faça todas as verificações necessárias. 
 
-n1 = float(input("Digite uma nota de 0.0 a 10.0: "))
+ n1 = float(input("Digite uma nota de 0.0 a 10.0: "))
 n2 = float(input("Digite uma nota de 0.0 a 10.0: "))
 n3 = float(input("Digite uma nota de 0.0 a 10.0: "))
 p1 = 2
@@ -136,11 +136,10 @@ if media_pond <= 2.9:
 if media_pond >= 3 and media_pond <= 4.9:
     print(f'Sua média foi {media_pond}, você ficou de recuperação! Não desista!!')
 if media_pond >= 5:
-    print(f'Parabéns, {media_pond} você foi aprovado!')
+    print(f'Parabéns, {media_pond} você foi aprovado!') 
 
 
-
-""" 15. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As
+ 15. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As
 perguntas são:
 
 - "Telefonou para a vítima?"
@@ -151,14 +150,32 @@ perguntas são:
 
 O programa deve no final emitir uma classificação sobre a participação da
 pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser
-classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".  """
+classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".  
 
-p1 = input("Responda cada pergunta com Sim ou Não. Você telefonou para a vítima? ").lower()
-p2 = input("Você esteve no local do crime? ").lower()
-p3 = input("Você mora perto da vítima? ").lower()
-p4 = input("Você devia para a vítima? ").lower()
-p5 = input("Você já trabalhou com a vítima? ").lower()
+print("Responda positivamente com sim, ou negue com não as perguntas a seguir: ")
+print("Você telefonou para a vítima? ")
+print("Você esteve no local do crime? ")
+print("Você mora perto da vítima? ")
+print("Você devia para a vítima? ")
+print("Você já trabalhou com a vítima? ")
 
+contador = 0
+x = 0
+for i in range(5):
+    res = input('Resposta: ')
+    if res == "sim":
+        contador += 1
+    if res != "sim" and res != "não":
+        print("Resposta não computada, por favor, responda somente com sim ou não.")        
+
+if contador == 2:
+    print("Você está classificado como suspeito")
+
+if contador == 3 or contador == 4:
+    print("Você está classificado como cúmplice")
+
+if contador == 5:
+    print("Você está classificado como ASSASSINO") """ 
 
 
 """ 16. Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou
