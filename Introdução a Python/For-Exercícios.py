@@ -49,14 +49,81 @@ for i in range(ex):
 print(x) """
 
 #6
-
+""" 
 n = int(input("Digite um número para obter sua tabuada: "))
 x = 1
 
 print(f'Tabuada de {n}:')
 for i in range(11):
     x = n*i
-    print(f'{n} x {i} = {x}')
+    print(f'{n} x {i} = {x}') """
 
 #7
     
+
+""" 21. Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e
+imprima sua média.  """
+
+""" soma = 0
+media = 0
+
+for i in range(10):
+    n = int(input("Digite um valor para a soma: "))
+    if n > 0:
+        soma += n
+        print(soma)
+
+media = soma/10
+print(f'Sua média é: {media}')
+ """
+
+
+""" 22. Faça um programa que leia um numero inteiro “N” e depois imprima os N
+primeiros números naturais ímpares.  """
+
+""" n = int(input("Digite um número para receber essa mesma quantidade de números ímpares: "))
+x = -1
+
+for i in range(n):
+    x +=2
+    print(x) """
+
+#23. Faça um programa que leia um numero inteiro positivo “N” e imprima todos os números naturais de 0 até “N” em ordem crescente. 
+
+""" n = int(input("Digite um número para receber essa mesma quantidade de números crescente: "))
+x = 0
+
+for i in range(n):
+    x +=1
+    print(x)
+ """
+
+#24. Faça um programa que leia um numero inteiro positivo “N” e imprima todos os números naturais de 0 até N em ordem decrescente.  
+
+
+""" n = int(input("Digite um número para receber essa mesma quantidade de números decrescente: "))
+x = n
+
+for i in range(n):
+    x -=1
+print(x) 
+ """
+
+#25. Faça um programa que receba dois números. Calcule e mostre: 
+# - a soma dos números pares desse intervalo de números, incluindo os números digitados; 
+# - a multiplicação dos números ímpares desse intervalo, incluindo os digitados; 
+
+""" n1 = int(input("Digite um número: "))
+n2 = int(input("Digite um número: "))
+soma = 0
+
+
+if n1 % 2 == 1:
+    n1 += 1
+
+for i in range(n1, n2+2, 2):
+    soma += i
+    print(i)
+
+print(f'Sua soma é de: {soma}')
+ """

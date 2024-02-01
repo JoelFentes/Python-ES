@@ -179,31 +179,128 @@ if contador == 5:
 
 
 """ 16. Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou
-não se aposentar. As condições para aposentadoria são: - Ter pelo menos 65 anos, - Ou ter trabalhado pelo menos 30 anos, - Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos. 17. Leia a distância em Km e a quantidade de litros de gasolina consumidos por um
+não se aposentar. As condições para aposentadoria são: - Ter pelo menos 65 anos, - Ou ter trabalhado pelo menos 30 anos, - Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos. """
+
+""" age = int(input("Digite sua idade: "))
+tempo_contri = float(input("Digite seu tempo de contribuição: "))
+
+if age >= 65:
+    print(f'Sua idade é de: {age} anos, você está apto a aposentadoria')
+if tempo_contri >= 30:
+    print(f'Seu tempo de contribuição é de: {tempo_contri} anos, você está apto a aposentadoria')
+if age >= 60 and tempo_contri >= 25:
+    print(f'Você está apto a aposentadoria') """
+
+
+""" 17. Leia a distância em Km e a quantidade de litros de gasolina consumidos por um
 carro em um percurso, calcule o consumo em Km/l e escreva uma mensagem de
 acordo com a tabela abaixo: """
+""" 
+km = float(input("Digite a distância do trajeto em Km: "))
+gas = float(input("Digite a quantidade de litros consumidos no percurso: "))
 
+km_por_litro = km / gas
+
+if km_por_litro < 8:
+    print(f'Venda o carro, consumo de: {km_por_litro} km/l')
+
+if km_por_litro >= 8 and km_por_litro <= 12: 
+    print(f'Econômico, consumo de: {km_por_litro} km/l')
+
+if km_por_litro > 12:
+    print(f'Super econômico, consumo de: {km_por_litro} km/l') """
 
 """ 18. Escreva um programa que escreva na tela, de 1 até 100, de 1 em 1, 2 vezes. A primeira vez deve usar a estrutura de repetição “for”, a segunda vez a estrutura
 “while”.  """
 
+for i in range (101):
+    print(i)
+
+x = 0
+
+while x < 101:
+    x += 1
+
+
 """ 19. Faça um programa que peça ao usuário para digitar 10 valores e some-os e imprima o resultado.  """
 
+soma = 0
+
+for i in range(10):
+    n = int(input("Digite um valor para a soma: "))
+    soma += n
+    print(soma)
+
+
 """ 20. Faça um programa que leia 10 inteiros e imprima sua media.  """
+
+
+soma = 0
+media = 0
+
+
+for i in range(10):
+    n = int(input("Digite um valor para a soma: "))
+    soma += n
+    print(soma)
+
+media = soma/10
+print(f'Sua média é: {media}')
+
 
 """ 21. Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e
 imprima sua média.  """
 
+soma = 0
+media = 0
+
+for i in range(10):
+    n = int(input("Digite um valor para a soma: "))
+    if n > 0:
+        soma += n
+        print(soma)
+
+media = soma/10
+print(f'Sua média é: {media}')
+
 """ 22. Faça um programa que leia um numero inteiro “N” e depois imprima os N
 primeiros números naturais ímpares.  """
 
+n = int(input("Digite um número para receber essa mesma quantidade de números ímpares: "))
+x = -1
+
+for i in range(n):
+    x +=2
+    print(x)
+
+
 """ 23. Faça um programa que leia um numero inteiro positivo “N” e imprima todos os números naturais de 0 até “N” em ordem crescente. """
+
+n = int(input("Digite um número para receber essa mesma quantidade de números crescente: "))
+x = 0
+
+for i in range(n):
+    x +=1
+    print(x)
 
 """ 24. Faça um programa que leia um numero inteiro positivo “N” e imprima todos os
 números naturais de 0 até N em ordem decrescente.  """
 
-""" 25. Faça um programa que receba dois números. Calcule e mostre: - a soma dos números pares desse intervalo de números, incluindo os números
-digitados; - a multiplicação dos números ímpares desse intervalo, incluindo os digitados; """
+n = int(input("Digite um número para receber essa mesma quantidade de números crescente: "))
+x = 0
+
+for i in range(n, 0):
+    x -=1
+    print(x)
+
+""" 25. Faça um programa que receba dois números. 
+
+Calcule e mostre: 
+- a soma dos números pares desse intervalo de números, incluindo os números
+digitados; 
+- a multiplicação dos números ímpares desse intervalo, incluindo os digitados; """
+
+
 
 """ 26. Faça um programa que imprima a tabuada de multiplicação de 1 a 9; """
 
