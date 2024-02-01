@@ -1,38 +1,38 @@
 # Lista 01 - Nivelamento
 # Aluno: Joel Oliveira Fentes da Cunha
 
-""" 1. Faça um programa que leia um número inteiro e o imprima.
+#1. Faça um programa que leia um número inteiro e o imprima.
 
 a = int(input("Escreva um número inteiro: "))
 print(f'Seu número é: {a}')
 
-2. Peça ao usuário para digitar três valores inteiros e imprima a soma deles.  
+#2. Peça ao usuário para digitar três valores inteiros e imprima a soma deles.  
 n1 = int(input("Escreva um número inteiro: "))
 n2 = int(input("Escreva mais um número inteiro: "))
 n3 = int(input("Escreva mais um número inteiro: "))
 
 print(f'A soma dos números é: {n1 + n2 + n3}')
 
-3. Desenvolva um algoritmo em python que leia um número inteiro e imprima o seu antecessor e seu sucessor. 
+#3. Desenvolva um algoritmo em python que leia um número inteiro e imprima o seu antecessor e seu sucessor. 
 
 num = int(input("Escreva um número inteiro: "))
 print(f'O antecessor do número é: {num - 1 }, O sucessor do número é: {num + 1}')
 
-4. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit. A fórmula de conversão é: F = C*(9.0/5.0)+32.0, sendo F a
-temperatura em Fahrenheit e C a temperatura em Celsius.  
+""" 4. Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit. A fórmula de conversão é: F = C*(9.0/5.0)+32.0, sendo F a
+temperatura em Fahrenheit e C a temperatura em Celsius.   """
 
 C = float(input("Escreva uma temperatura em graus celsius: "))
 F = C*(9/5) + 32
 print(f'A temperatura em Fahrenheit é: {F}ºF') 
 
- 5. Leia uma velocidade em km/h (quilômetros por hora) e apresente-a convertida em m/s (metros por segundo). A fórmula de conversão é: M = K*3.6, sendo K a velocidade em km/h e M em m/s. 
+#5. Leia uma velocidade em km/h (quilômetros por hora) e apresente-a convertida em m/s (metros por segundo). A fórmula de conversão é: M = K*3.6, sendo K a velocidade em km/h e M em m/s. 
 
 K = float(input("Digite uma velocidade em km/h: "))
 M = K*3.6
 print(f'Sua velocidade em m/s é: {M}')
 
 
- 6. Leia quatro notas, calcule a média aritmética e imprima o resultado.  
+#6. Leia quatro notas, calcule a média aritmética e imprima o resultado.  
 
 n1 = int(input("Escreva uma nota: "))
 n2 = int(input("Escreva mais uma nota: "))
@@ -42,22 +42,21 @@ media = (n1 + n2 + n3 + n4)/4
 print(f'Sua média é: {media}')
 
 
- 7. Leia um valor em real e a cotação do dólar. Em seguida, imprima o valor correspondente em dólares. 
+#7. Leia um valor em real e a cotação do dólar. Em seguida, imprima o valor correspondente em dólares. 
 
 rs = float(input("Escreva um valor em dinheiro(R$): "))
 dolar = float(input("Escreva o valor do dolár hoje: "))
 print(f'O valor em dólar é: {rs*dolar}$') 
  
- 8. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente. A área do círculo é π*r2 , considere π = 3.141592.  
+#8. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente. A área do círculo é π*r2 , considere π = 3.141592.  
 
 r = float(input("Escreva o valor do raio: "))
 area = 3.141592*(r*r) 
 print(f'A área do círculo é: {area}') 
 
-
- 9. A importância de R$ 780.000,00 será dividida entre três ganhadores de um concurso. Sendo que da quantia total: 
+""" 9. A importância de R$ 780.000,00 será dividida entre três ganhadores de um concurso. Sendo que da quantia total: 
 - O primeiro ganhador receberá 46%; - O segundo receberá 32%; - O terceiro receberá o restante;
-Calcule e imprima a quantia ganha por cada um dos ganhadores. 
+Calcule e imprima a quantia ganha por cada um dos ganhadores.  """
 
 p = 780.000
 g1 = p*0.46
@@ -66,7 +65,7 @@ g3 = p*0.22
 
 print(f'O prêmio é de: {p}\nO primeiro ganhador ganhará: {g1}00,00\nO segundo ganhador: {g2}00,00\nO terceiro: {g3}00,00')
 
- 10. Faça um programa que leia um número e, caso ele seja positivo, calcule e mostre: - O número digitado ao quadrado - A raiz quadrada do número digitado 
+# 10. Faça um programa que leia um número e, caso ele seja positivo, calcule e mostre: - O número digitado ao quadrado - A raiz quadrada do número digitado 
 
 num = float(input("Digite um número qualquer: "))
 if num > 0:
@@ -77,7 +76,7 @@ else:
     print(f'Valor negativo :(')
 
 
- 11. Faça um programa que receba um número inteiro e verifique se este número é par ou ímpar, positivo ou negativo.  
+# 11. Faça um programa que receba um número inteiro e verifique se este número é par ou ímpar, positivo ou negativo.  
 
 num = int(input("Digite um número qualquer: "))
 
@@ -92,8 +91,8 @@ else:
     print(f'O número {num} é impar')
 
 
- 12. Faça um programa que leia 2 notas de um aluno, verifique se as notas são válidas e exiba na tela a média destas notas. Uma nota válida deve ser, obrigatoriamente, um valor entre 0.0 e 10.0, onde caso a nota não possua um
-valor válido, este fato deve ser informado ao usuário e o programa termina.  
+""" 12. Faça um programa que leia 2 notas de um aluno, verifique se as notas são válidas e exiba na tela a média destas notas. Uma nota válida deve ser, obrigatoriamente, um valor entre 0.0 e 10.0, onde caso a nota não possua um
+valor válido, este fato deve ser informado ao usuário e o programa termina.  """ 
 
 n1 = float(input("Digite uma nota de 0.0 a 10.0: "))
 n2 = float(input("Digite uma nota de 0.0 a 10.0: "))
@@ -104,8 +103,8 @@ else:
     media = (n1 + n2)/2
     print(f'Sua média é: {media}')  
 
- 13. Faça um programa que receba a altura e o sexo de uma pessoa e calcule e
-mostre seu peso ideal, utilizando as seguintes fórmulas (onde h corresponde à altura): - Homens: (72.7 * h) − 58 - Mulheres: (62, 1 * h) − 44, 7 
+""" 13. Faça um programa que receba a altura e o sexo de uma pessoa e calcule e
+mostre seu peso ideal, utilizando as seguintes fórmulas (onde h corresponde à altura): - Homens: (72.7 * h) − 58 - Mulheres: (62, 1 * h) − 44, 7  """
 
 h = float(input("Digite sua altura em metros: "))
 sexo = input("Digite seu sexo, 'Masculino' ou '1' e 'Feminino' ou '2': ")
@@ -119,11 +118,11 @@ else:
 
 
 
- 14. A nota final de um estudante é calculada a partir de três notas atribuídas entre o intervalo de 0 até 10, respectivamente, a um trabalho de laboratório, a uma avaliação semestral e a um exame final. A média das três notas mencionadas
+""" 14. A nota final de um estudante é calculada a partir de três notas atribuídas entre o intervalo de 0 até 10, respectivamente, a um trabalho de laboratório, a uma avaliação semestral e a um exame final. A média das três notas mencionadas
 anteriormente obedece aos pesos: Trabalho de Laboratório: 2; Avaliação Semestral: 3; Exame Final: 5. De acordo com o resultado, mostre na tela se o aluno está reprovado (média entre 0 e 2,9), de recuperação (entre 3 e 4,9) ou se
-foi aprovado. Faça todas as verificações necessárias. 
+foi aprovado. Faça todas as verificações necessárias.  """
 
- n1 = float(input("Digite uma nota de 0.0 a 10.0: "))
+n1 = float(input("Digite uma nota de 0.0 a 10.0: "))
 n2 = float(input("Digite uma nota de 0.0 a 10.0: "))
 n3 = float(input("Digite uma nota de 0.0 a 10.0: "))
 p1 = 2
@@ -139,7 +138,7 @@ if media_pond >= 5:
     print(f'Parabéns, {media_pond} você foi aprovado!') 
 
 
- 15. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As
+""" 15. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As
 perguntas são:
 
 - "Telefonou para a vítima?"
@@ -150,7 +149,8 @@ perguntas são:
 
 O programa deve no final emitir uma classificação sobre a participação da
 pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser
-classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".  
+classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".   """
+
 
 print("Responda positivamente com sim, ou negue com não as perguntas a seguir: ")
 print("Você telefonou para a vítima? ")
@@ -175,13 +175,17 @@ if contador == 3 or contador == 4:
     print("Você está classificado como cúmplice")
 
 if contador == 5:
-    print("Você está classificado como ASSASSINO") """ 
+    print("Você está classificado como ASSASSINO")
 
 
 """ 16. Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou
 não se aposentar. As condições para aposentadoria são: - Ter pelo menos 65 anos, - Ou ter trabalhado pelo menos 30 anos, - Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos. """
 
+<<<<<<< Updated upstream
 """ age = int(input("Digite sua idade: "))
+=======
+age = int(input("Digite sua idade: "))
+>>>>>>> Stashed changes
 tempo_contri = float(input("Digite seu tempo de contribuição: "))
 
 if age >= 65:
@@ -189,7 +193,11 @@ if age >= 65:
 if tempo_contri >= 30:
     print(f'Seu tempo de contribuição é de: {tempo_contri} anos, você está apto a aposentadoria')
 if age >= 60 and tempo_contri >= 25:
+<<<<<<< Updated upstream
     print(f'Você está apto a aposentadoria') """
+=======
+    print(f'Você está apto a aposentadoria') 
+>>>>>>> Stashed changes
 
 
 """ 17. Leia a distância em Km e a quantidade de litros de gasolina consumidos por um
@@ -199,6 +207,12 @@ acordo com a tabela abaixo: """
 km = float(input("Digite a distância do trajeto em Km: "))
 gas = float(input("Digite a quantidade de litros consumidos no percurso: "))
 
+<<<<<<< Updated upstream
+=======
+km = float(input("Digite a distância do trajeto em Km: "))
+gas = float(input("Digite a quantidade de litros consumidos no percurso: "))
+
+>>>>>>> Stashed changes
 km_por_litro = km / gas
 
 if km_por_litro < 8:
@@ -208,7 +222,11 @@ if km_por_litro >= 8 and km_por_litro <= 12:
     print(f'Econômico, consumo de: {km_por_litro} km/l')
 
 if km_por_litro > 12:
+<<<<<<< Updated upstream
     print(f'Super econômico, consumo de: {km_por_litro} km/l') """
+=======
+    print(f'Super econômico, consumo de: {km_por_litro} km/l') 
+>>>>>>> Stashed changes
 
 """ 18. Escreva um programa que escreva na tela, de 1 até 100, de 1 em 1, 2 vezes. A primeira vez deve usar a estrutura de repetição “for”, a segunda vez a estrutura
 “while”.  """
@@ -301,8 +319,44 @@ digitados;
 - a multiplicação dos números ímpares desse intervalo, incluindo os digitados; """
 
 
+<<<<<<< Updated upstream
+=======
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+soma_pares = 0
+multiplicacao_impares = 1
+
+
+for num in range(num1, num2 + 1):
+    if num % 2 == 0:
+        soma_pares += num
+    else:
+        multiplicacao_impares *= num
+>>>>>>> Stashed changes
 
 """ 26. Faça um programa que imprima a tabuada de multiplicação de 1 a 9; """
 
+
+n = int(input("Digite um número para obter sua tabuada: "))
+x = 1
+
+print(f'Tabuada de {n}:')
+for i in range(10):
+    x = n*i
+    print(f'{n} x {i} = {x}')
+
 """ 27. Escreva um programa que leia um numero inteiro positivo “N” e em seguida
 imprima “N” linhas do chamado Triângulo de Floyd. Para n = 6, temos:  """
+
+
+
+n = int(input("Digite um número inteiro positivo: "))
+
+contador = 1
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(contador, end=" ")
+        contador += 1
+    print()  

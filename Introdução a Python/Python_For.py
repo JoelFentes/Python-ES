@@ -50,13 +50,26 @@ print(x) """
 
 #6
 
-n = int(input("Digite um número para obter sua tabuada: "))
+""" n = int(input("Digite um número para obter sua tabuada: "))
 x = 1
 
 print(f'Tabuada de {n}:')
 for i in range(11):
     x = n*i
-    print(f'{n} x {i} = {x}')
+    print(f'{n} x {i} = {x}') """
 
 #7
-    
+
+""" 27. Escreva um programa que leia um numero inteiro positivo “N” e em seguida
+imprima “N” linhas do chamado Triângulo de Floyd. Para n = 6, temos:  """
+
+
+n = int(input("Digite um número inteiro positivo: "))
+
+contador = 1
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(contador, end=" ")
+        contador += 1
+    print()  
