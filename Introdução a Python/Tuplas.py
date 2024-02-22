@@ -47,3 +47,19 @@ print(new_lista)
 
 #3.
 
+string = "A casa é bonita, A casa é azul"
+list_string = []
+list_string.append(string.split(" "))
+count = 0
+
+#4.
+
+flag = True
+
+while flag == True:
+    nome = input("Digite o nome: ")
+    idade = int(input("Digite a idade: "))
+    notas = int(input("Digite a idade: "))
+
+    aluno = [nome, idade, notas]
+
